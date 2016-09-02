@@ -936,7 +936,6 @@
                     <useReleaseProfile>false</useReleaseProfile>
                     <goals>deploy</goals>
                 </configuration>
-
             </plugin>
 
         </plugins>
@@ -1012,11 +1011,10 @@
     <!--SCM(Source Control Management)标签允许你配置你的代码库，供Maven web站点和其它插件使用。-->
     <scm>
         <!--SCM的URL,该URL描述了版本库和如何连接到版本库。欲知详情，请看SCMs提供的URL格式和支持列表。该连接只读。-->
-        <connection>scm:git: ssh://git@127.0.0.1:1222/~/visionsky_bocgd_root_pom.git</connection>
+        <connection>scm:git:file:///${pom.basedir}/.git</connection>
         <!--给开发者使用的，类似connection元素。即该连接不仅仅只读-->
-        <developerConnection>scm:git: ssh://git@127.0.0.1:1222/~/visionsky_bocgd_root_pom.git</developerConnection>
+        <developerConnection>scm:git:file:///${pom.basedir}/.git</developerConnection>
         <!--当前代码的标签，在开发阶段默认为HEAD-->
-        <tag>root-pom-1.0</tag>
         <!--指向项目的可浏览SCM库（例如ViewVC或者Fisheye）的URL。-->
         <url />
     </scm>
