@@ -4,7 +4,7 @@
 
     <groupId>ccz</groupId>
     <artifactId>ccz-maven-root</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -1009,8 +1009,8 @@
         <developerConnection>scm:git:file:///${pom.basedir}/.git</developerConnection>
         <!--当前代码的标签，在开发阶段默认为HEAD-->
         <!--指向项目的可浏览SCM库（例如ViewVC或者Fisheye）的URL。-->
-        <url></url>
-        <tag>HEAD</tag>
+        <url />
+        <tag>ccz-maven-root-1.1</tag>
   </scm>
 
     <!--远程仓库列表，它是Maven用来填充构建系统本地仓库所使用的一组远程项目。 -->
