@@ -122,7 +122,7 @@
         <maven-enforcer-plugin.version>1.4.1</maven-enforcer-plugin.version>
         <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
         <maven-help-plugin.version>2.2</maven-help-plugin.version>
-        <maven-release-plugin.version>2.3.2</maven-release-plugin.version>
+        <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
         <jaxws-maven-plugin.version>2.4.1</jaxws-maven-plugin.version>
         <wagon-provider-api.version>2.10</wagon-provider-api.version>
         <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
@@ -911,6 +911,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-plugin</artifactId>
+                <configuration>
+                    <connectionType>developerConnection</connectionType>
+                </configuration>
             </plugin>
 
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-enforcer-plugin -->
@@ -932,10 +935,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <useReleaseProfile>false</useReleaseProfile>
-                    <goals>deploy</goals>
-                </configuration>
             </plugin>
 
         </plugins>
