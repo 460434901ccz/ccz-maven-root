@@ -909,12 +909,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-plugin</artifactId>
-                <configuration>
-                    <connectionType>developerConnection</connectionType>
-                </configuration>
             </plugin>
 
-            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-enforcer-plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -1014,7 +1010,7 @@
         <!--当前代码的标签，在开发阶段默认为HEAD-->
         <!--指向项目的可浏览SCM库（例如ViewVC或者Fisheye）的URL。-->
         <url></url>
-      <tag>HEAD</tag>
+        <tag>HEAD</tag>
   </scm>
 
     <!--远程仓库列表，它是Maven用来填充构建系统本地仓库所使用的一组远程项目。 -->
